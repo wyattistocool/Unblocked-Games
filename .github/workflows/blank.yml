@@ -1,0 +1,820 @@
+<html lang="en" class="dark"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade Hub - Unblocked Games</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            900: '#14532d',
+                        },
+                        dark: {
+                            bg: '#0f172a',
+                            card: '#1e293b',
+                            border: '#334155'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+        .game-card {
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .game-card:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.inset-y-0{top:0px;bottom:0px}.left-0{left:0px}.right-0{right:0px}.top-0{top:0px}.left-2\.5{left:0.625rem}.top-2\.5{top:0.625rem}.z-10{z-index:10}.z-30{z-index:30}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-12{margin-top:3rem}.mb-2{margin-bottom:0.5rem}.ml-0\.5{margin-left:0.125rem}.mr-1\.5{margin-right:0.375rem}.line-clamp-1{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1}.flex{display:flex}.grid{display:grid}.hidden{display:none}.aspect-video{aspect-ratio:16 / 9}.h-10{height:2.5rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-8{height:2rem}.h-full{height:100%}.h-12{height:3rem}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-16{width:4rem}.w-2{width:0.5rem}.w-8{width:2rem}.w-full{width:100%}.w-12{width:3rem}.max-w-7xl{max-width:80rem}.max-w-sm{max-width:24rem}.flex-grow{flex-grow:1}.scale-75{--tw-scale-x:.75;--tw-scale-y:.75;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}@keyframes spin{to{transform:rotate(360deg)}}.animate-spin{animation:spin 1s linear infinite}.cursor-pointer{cursor:pointer}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-1{gap:0.25rem}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.whitespace-nowrap{white-space:nowrap}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.rounded{border-radius:0.25rem}.rounded-md{border-radius:0.375rem}.border{border-width:1px}.border-0{border-width:0px}.border-4{border-width:4px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-brand-500\/20{border-color:rgb(34 197 94 / 0.2)}.border-dark-border{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-red-500\/30{border-color:rgb(239 68 68 / 0.3)}.border-brand-500{--tw-border-opacity:1;border-color:rgb(34 197 94 / var(--tw-border-opacity, 1))}.border-slate-700\/50{border-color:rgb(51 65 85 / 0.5)}.border-t-brand-500{--tw-border-opacity:1;border-top-color:rgb(34 197 94 / var(--tw-border-opacity, 1))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity, 1))}.bg-brand-500{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.bg-brand-500\/10{background-color:rgb(34 197 94 / 0.1)}.bg-brand-600{--tw-bg-opacity:1;background-color:rgb(22 163 74 / var(--tw-bg-opacity, 1))}.bg-dark-bg{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-dark-bg\/90{background-color:rgb(15 23 42 / 0.9)}.bg-dark-card{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-dark-card\/50{background-color:rgb(30 41 59 / 0.5)}.bg-dark-card\/90{background-color:rgb(30 41 59 / 0.9)}.bg-red-500\/20{background-color:rgb(239 68 68 / 0.2)}.bg-slate-950\/90{background-color:rgb(2 6 23 / 0.9)}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-slate-900\/80{background-color:rgb(15 23 42 / 0.8)}.bg-slate-950\/40{background-color:rgb(2 6 23 / 0.4)}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-tr{background-image:linear-gradient(to top right, var(--tw-gradient-stops))}.bg-gradient-to-t{background-image:linear-gradient(to top, var(--tw-gradient-stops))}.from-brand-600{--tw-gradient-from:#16a34a var(--tw-gradient-from-position);--tw-gradient-to:rgb(22 163 74 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-white{--tw-gradient-from:#fff var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 255 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-dark-card{--tw-gradient-from:#1e293b var(--tw-gradient-from-position);--tw-gradient-to:rgb(30 41 59 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-slate-200{--tw-gradient-to:rgb(226 232 240 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #e2e8f0 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-transparent{--tw-gradient-to:rgb(0 0 0 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), transparent var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-emerald-400{--tw-gradient-to:#34d399 var(--tw-gradient-to-position)}.to-slate-400{--tw-gradient-to:#94a3b8 var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.object-cover{object-fit:cover}.p-2\.5{padding:0.625rem}.p-3\.5{padding:0.875rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-4{padding-left:1rem;padding-right:1rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.pb-2{padding-bottom:0.5rem}.pl-10{padding-left:2.5rem}.pl-3\.5{padding-left:0.875rem}.pr-10{padding-right:2.5rem}.pr-3\.5{padding-right:0.875rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-\[10px\]{font-size:10px}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.text-brand-500{--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}.text-red-400{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}.text-slate-100{--tw-text-opacity:1;color:rgb(241 245 249 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.placeholder-slate-400::placeholder{--tw-placeholder-opacity:1;color:rgb(148 163 184 / var(--tw-placeholder-opacity, 1))}.opacity-0{opacity:0}.opacity-60{opacity:0.6}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-brand-500\/20{--tw-shadow-color:rgb(34 197 94 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-brand-500\/40{--tw-shadow-color:rgb(34 197 94 / 0.4);--tw-shadow:var(--tw-shadow-colored)}.shadow-brand-600\/25{--tw-shadow-color:rgb(22 163 74 / 0.25);--tw-shadow:var(--tw-shadow-colored)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-\[2px\]{--tw-backdrop-blur:blur(2px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.selection\:bg-brand-500 *::selection{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-brand-500::selection{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:border-brand-500\/50:hover{border-color:rgb(34 197 94 / 0.5)}.hover\:border-slate-600:hover{--tw-border-opacity:1;border-color:rgb(71 85 105 / var(--tw-border-opacity, 1))}.hover\:bg-brand-500:hover{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.hover\:bg-red-500:hover{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.focus\:border-brand-500:focus{--tw-border-opacity:1;border-color:rgb(34 197 94 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-1:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-brand-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(34 197 94 / var(--tw-ring-opacity, 1))}.group:hover .group-hover\:scale-100{--tw-scale-x:1;--tw-scale-y:1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:text-brand-500{--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:opacity-100{opacity:1}@media (min-width: 640px){.sm\:inline-flex{display:inline-flex}.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}@media (min-width: 768px){.md\:w-auto{width:auto}.md\:max-w-md{max-width:28rem}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:justify-start{justify-content:flex-start}.md\:text-base{font-size:1rem;line-height:1.5rem}}@media (min-width: 1024px){.lg\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}.lg\:gap-6{gap:1.5rem}.lg\:px-8{padding-left:2rem;padding-right:2rem}}</style></head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-brand-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-30 bg-dark-bg/90 backdrop-blur-md border-b border-dark-border px-4 lg:px-8 py-3 transition-all">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            
+            <!-- Logo & Brand -->
+            <div class="flex items-center gap-3 w-full md:w-auto justify-between md:justify-start">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-emerald-400 flex items-center justify-center shadow-lg shadow-brand-500/20">
+                        <i class="fa-solid font-bold fa-gamepad text-xl text-white"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
+                            ARCADE<span class="text-brand-500">HUB</span>
+                        </h1>
+                        <p class="text-xs text-slate-400 font-medium">Unblocked Game Portal</p>
+                    </div>
+                </div>
+
+                <!-- Stats Badge -->
+                <span class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-brand-500/10 text-brand-500 border border-brand-500/20">
+                    <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                    <span id="game-count">8 Games</span>
+                </span>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="relative w-full md:max-w-md">
+                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input type="text" id="search-input" placeholder="Search games by title or tag (e.g. 'retro', 'car')..." class="w-full pl-10 pr-10 py-2.5 bg-dark-card border border-dark-border rounded-xl text-sm text-slate-200 placeholder-slate-400 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all shadow-inner">
+                <button id="clear-search" class="hidden absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-white">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="max-w-7xl w-full mx-auto px-4 lg:px-8 py-6 flex-grow">
+        
+        <!-- Category Filter Buttons -->
+        <section class="mb-8 overflow-x-auto pb-2 scrollbar-none">
+            <div class="flex items-center gap-2" id="category-container">
+                <button data-category="All" class="category-btn whitespace-nowrap px-4 py-2 rounded-xl text-xs font-semibold border transition-all bg-brand-600 border-brand-500 text-white shadow-lg shadow-brand-600/25">
+                    <i class="fa-solid fa-border-all mr-1.5"></i> All
+                </button>
+            
+                <button data-category="Puzzle" class="category-btn whitespace-nowrap px-4 py-2 rounded-xl text-xs font-semibold border transition-all bg-dark-card border-dark-border text-slate-300 hover:border-slate-600 hover:text-white">
+                    <i class="fa-solid fa-puzzle-piece mr-1.5"></i> Puzzle
+                </button>
+            
+                <button data-category="Arcade" class="category-btn whitespace-nowrap px-4 py-2 rounded-xl text-xs font-semibold border transition-all bg-dark-card border-dark-border text-slate-300 hover:border-slate-600 hover:text-white">
+                    <i class="fa-solid fa-gamepad mr-1.5"></i> Arcade
+                </button>
+            
+                <button data-category="Retro" class="category-btn whitespace-nowrap px-4 py-2 rounded-xl text-xs font-semibold border transition-all bg-dark-card border-dark-border text-slate-300 hover:border-slate-600 hover:text-white">
+                    <i class="fa-solid fa-ghost mr-1.5"></i> Retro
+                </button>
+            
+                <button data-category="Action" class="category-btn whitespace-nowrap px-4 py-2 rounded-xl text-xs font-semibold border transition-all bg-dark-card border-dark-border text-slate-300 hover:border-slate-600 hover:text-white">
+                    <i class="fa-solid fa-bolt mr-1.5"></i> Action
+                </button>
+            
+                <button data-category="Strategy" class="category-btn whitespace-nowrap px-4 py-2 rounded-xl text-xs font-semibold border transition-all bg-dark-card border-dark-border text-slate-300 hover:border-slate-600 hover:text-white">
+                    <i class="fa-solid fa-chess mr-1.5"></i> Strategy
+                </button>
+            
+                <button data-category="Driving" class="category-btn whitespace-nowrap px-4 py-2 rounded-xl text-xs font-semibold border transition-all bg-dark-card border-dark-border text-slate-300 hover:border-slate-600 hover:text-white">
+                    <i class="fa-solid fa-car mr-1.5"></i> Driving
+                </button>
+            </div>
+        </section>
+
+        <!-- Search / Category Stats Header -->
+        <div class="flex items-center justify-between mb-6">
+            <h2 id="section-title" class="text-xl font-bold text-slate-100 flex items-center gap-2"><span>All Games</span></h2>
+            <div class="text-sm text-slate-400">
+                Showing <span id="visible-count" class="font-semibold text-slate-200">8</span> title(s)
+            </div>
+        </div>
+
+        <!-- Games Grid -->
+        <section id="games-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 lg:gap-6">
+                    <div onclick="launchGame('2048')" class="game-card group cursor-pointer bg-dark-card border border-dark-border hover:border-brand-500/50 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg">
+                        <div class="relative aspect-video w-full overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="2048" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://placehold.co/400x225/1e293b/94a3b8?text=Arcade+Game'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark-card via-transparent to-transparent opacity-60"></div>
+                            
+                            <!-- Play Overlay Button -->
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-slate-950/40 backdrop-blur-[2px] transition-opacity">
+                                <span class="w-12 h-12 rounded-full bg-brand-500 text-white flex items-center justify-center shadow-lg shadow-brand-500/40 transform scale-75 group-hover:scale-100 transition-transform">
+                                    <i class="fa-solid fa-play ml-0.5 text-lg"></i>
+                                </span>
+                            </div>
+
+                            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-slate-900/80 backdrop-blur-md text-brand-500 border border-brand-500/20">
+                                Puzzle
+                            </span>
+                        </div>
+
+                        <div class="p-3.5 flex flex-col justify-between flex-grow">
+                            <h3 class="font-bold text-slate-100 text-sm group-hover:text-brand-500 transition-colors line-clamp-1 mb-2">
+                                2048
+                            </h3>
+                            <div class="flex flex-wrap gap-1">
+                                
+                                    <span class="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700/50">#classic</span>
+                                
+                                    <span class="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700/50">#numbers</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div onclick="launchGame('hextris')" class="game-card group cursor-pointer bg-dark-card border border-dark-border hover:border-brand-500/50 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg">
+                        <div class="relative aspect-video w-full overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Hextris" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://placehold.co/400x225/1e293b/94a3b8?text=Arcade+Game'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark-card via-transparent to-transparent opacity-60"></div>
+                            
+                            <!-- Play Overlay Button -->
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-slate-950/40 backdrop-blur-[2px] transition-opacity">
+                                <span class="w-12 h-12 rounded-full bg-brand-500 text-white flex items-center justify-center shadow-lg shadow-brand-500/40 transform scale-75 group-hover:scale-100 transition-transform">
+                                    <i class="fa-solid fa-play ml-0.5 text-lg"></i>
+                                </span>
+                            </div>
+
+                            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-slate-900/80 backdrop-blur-md text-brand-500 border border-brand-500/20">
+                                Arcade
+                            </span>
+                        </div>
+
+                        <div class="p-3.5 flex flex-col justify-between flex-grow">
+                            <h3 class="font-bold text-slate-100 text-sm group-hover:text-brand-500 transition-colors line-clamp-1 mb-2">
+                                Hextris
+                            </h3>
+                            <div class="flex flex-wrap gap-1">
+                                
+                                    <span class="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700/50">#tetris</span>
+                                
+                                    <span class="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700/50">#fast</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div onclick="launchGame('pacman')" class="game-card group cursor-pointer bg-dark-card border border-dark-border hover:border-brand-500/50 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg">
+                        <div class="relative aspect-video w-full overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Pac-Man Canvas" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://placehold.co/400x225/1e293b/94a3b8?text=Arcade+Game'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark-card via-transparent to-transparent opacity-60"></div>
+                            
+                            <!-- Play Overlay Button -->
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-slate-950/40 backdrop-blur-[2px] transition-opacity">
+                                <span class="w-12 h-12 rounded-full bg-brand-500 text-white flex items-center justify-center shadow-lg shadow-brand-500/40 transform scale-75 group-hover:scale-100 transition-transform">
+                                    <i class="fa-solid fa-play ml-0.5 text-lg"></i>
+                                </span>
+                            </div>
+
+                            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-slate-900/80 backdrop-blur-md text-brand-500 border border-brand-500/20">
+                                Retro
+                            </span>
+                        </div>
+
+                        <div class="p-3.5 flex flex-col justify-between flex-grow">
+                            <h3 class="font-bold text-slate-100 text-sm group-hover:text-brand-500 transition-colors line-clamp-1 mb-2">
+                                Pac-Man Canvas
+                            </h3>
+                            <div class="flex flex-wrap gap-1">
+                                
+                                    <span class="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700/50">#arcade</span>
+                                
+                                    <span class="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700/50">#classic</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div onclick="launchGame('slope')" class="game-card group cursor-pointer bg-dark-card border border-dark-border hover:border-brand-500/50 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg">
+                        <div class="relative aspect-video w-full overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="3D Ball Runner" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://placehold.co/400x225/1e293b/94a3b8?text=Arcade+Game'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark-card via-transparent to-transparent opacity-60"></div>
+                            
+                            <!-- Play Overlay Button -->
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-slate-950/40 backdrop-blur-[2px] transition-opacity">
+                                <span class="w-12 h-12 rounded-full bg-brand-500 text-white flex items-center justify-center shadow-lg shadow-brand-500/40 transform scale-75 group-hover:scale-100 transition-transform">
+                                    <i class="fa-solid fa-play ml-0.5 text-lg"></i>
+                                </span>
+                            </div>
+
+                            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-slate-900/80 backdrop-blur-md text-brand-500 border border-brand-500/20">
+                                Action
+                            </span>
+                        </div>
+
+                        <div class="p-3.5 flex flex-col justify-between flex-grow">
+                            <h3 class="font-bold text-slate-100 text-sm group-hover:text-brand-500 transition-colors line-clamp-1 mb-2">
+                                3D Ball Runner
+                            </h3>
+                            <div class="flex flex-wrap gap-1">
+                                
+                                    <span class="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700/50">#3d</span>
+                                
+                                    <span class="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700/50">#speed</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div onclick="launchGame('chess')" class="game-card group cursor-pointer bg-dark-card border border-dark-border hover:border-brand-500/50 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg">
+                        <div class="relative aspect-video w-full overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Master Chess" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://placehold.co/400x225/1e293b/94a3b8?text=Arcade+Game'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark-card via-transparent to-transparent opacity-60"></div>
+                            
+                            <!-- Play Overlay Button -->
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-slate-950/40 backdrop-blur-[2px] transition-opacity">
+                                <span class="w-12 h-12 rounded-full bg-brand-500 text-white flex items-center justify-center shadow-lg shadow-brand-500/40 transform scale-75 group-hover:scale-100 transition-transform">
+                                    <i class="fa-solid fa-play ml-0.5 text-lg"></i>
+                                </span>
+                            </div>
+
+                            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-slate-900/80 backdrop-blur-md text-brand-500 border border-brand-500/20">
+                                Strategy
+                            </span>
+                        </div>
+
+                        <div class="p-3.5 flex flex-col justify-between flex-grow">
+                            <h3 class="font-bold text-slate-100 text-sm group-hover:text-brand-500 transition-colors line-clamp-1 mb-2">
+                                Master Chess
+                            </h3>
+                            <div class="flex flex-wrap gap-1">
+                                
+                                    <span class="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700/50">#board</span>
+                                
+                                    <span class="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700/50">#logic</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div onclick="launchGame('drift-boss')" class="game-card group cursor-pointer bg-dark-card border border-dark-border hover:border-brand-500/50 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg">
+                        <div class="relative aspect-video w-full overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Drift Rally" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://placehold.co/400x225/1e293b/94a3b8?text=Arcade+Game'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark-card via-transparent to-transparent opacity-60"></div>
+                            
+                            <!-- Play Overlay Button -->
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-slate-950/40 backdrop-blur-[2px] transition-opacity">
+                                <span class="w-12 h-12 rounded-full bg-brand-500 text-white flex items-center justify-center shadow-lg shadow-brand-500/40 transform scale-75 group-hover:scale-100 transition-transform">
+                                    <i class="fa-solid fa-play ml-0.5 text-lg"></i>
+                                </span>
+                            </div>
+
+                            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-slate-900/80 backdrop-blur-md text-brand-500 border border-brand-500/20">
+                                Driving
+                            </span>
+                        </div>
+
+                        <div class="p-3.5 flex flex-col justify-between flex-grow">
+                            <h3 class="font-bold text-slate-100 text-sm group-hover:text-brand-500 transition-colors line-clamp-1 mb-2">
+                                Drift Rally
+                            </h3>
+                            <div class="flex flex-wrap gap-1">
+                                
+                                    <span class="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700/50">#car</span>
+                                
+                                    <span class="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700/50">#racing</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div onclick="launchGame('snake')" class="game-card group cursor-pointer bg-dark-card border border-dark-border hover:border-brand-500/50 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg">
+                        <div class="relative aspect-video w-full overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1628277613967-6abca504d0ac?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Retro Snake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://placehold.co/400x225/1e293b/94a3b8?text=Arcade+Game'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark-card via-transparent to-transparent opacity-60"></div>
+                            
+                            <!-- Play Overlay Button -->
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-slate-950/40 backdrop-blur-[2px] transition-opacity">
+                                <span class="w-12 h-12 rounded-full bg-brand-500 text-white flex items-center justify-center shadow-lg shadow-brand-500/40 transform scale-75 group-hover:scale-100 transition-transform">
+                                    <i class="fa-solid fa-play ml-0.5 text-lg"></i>
+                                </span>
+                            </div>
+
+                            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-slate-900/80 backdrop-blur-md text-brand-500 border border-brand-500/20">
+                                Retro
+                            </span>
+                        </div>
+
+                        <div class="p-3.5 flex flex-col justify-between flex-grow">
+                            <h3 class="font-bold text-slate-100 text-sm group-hover:text-brand-500 transition-colors line-clamp-1 mb-2">
+                                Retro Snake
+                            </h3>
+                            <div class="flex flex-wrap gap-1">
+                                
+                                    <span class="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700/50">#classic</span>
+                                
+                                    <span class="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700/50">#arcade</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div onclick="launchGame('flappy-bird')" class="game-card group cursor-pointer bg-dark-card border border-dark-border hover:border-brand-500/50 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg">
+                        <div class="relative aspect-video w-full overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Flappy Plane" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://placehold.co/400x225/1e293b/94a3b8?text=Arcade+Game'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark-card via-transparent to-transparent opacity-60"></div>
+                            
+                            <!-- Play Overlay Button -->
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-slate-950/40 backdrop-blur-[2px] transition-opacity">
+                                <span class="w-12 h-12 rounded-full bg-brand-500 text-white flex items-center justify-center shadow-lg shadow-brand-500/40 transform scale-75 group-hover:scale-100 transition-transform">
+                                    <i class="fa-solid fa-play ml-0.5 text-lg"></i>
+                                </span>
+                            </div>
+
+                            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-slate-900/80 backdrop-blur-md text-brand-500 border border-brand-500/20">
+                                Arcade
+                            </span>
+                        </div>
+
+                        <div class="p-3.5 flex flex-col justify-between flex-grow">
+                            <h3 class="font-bold text-slate-100 text-sm group-hover:text-brand-500 transition-colors line-clamp-1 mb-2">
+                                Flappy Plane
+                            </h3>
+                            <div class="flex flex-wrap gap-1">
+                                
+                                    <span class="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700/50">#tap</span>
+                                
+                                    <span class="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700/50">#hard</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+        <!-- Empty State (No games found) -->
+        <div id="no-results" class="hidden flex-col items-center justify-center py-16 text-center">
+            <div class="w-16 h-16 bg-dark-card border border-dark-border rounded-2xl flex items-center justify-center text-slate-500 text-2xl mb-4">
+                <i class="fa-solid fa-ghost"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-200 mb-1">No Games Found</h3>
+            <p class="text-sm text-slate-400 max-w-sm mb-4">We couldn't find any games matching your search query or selected filter.</p>
+            <button id="reset-filters" class="px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white rounded-lg text-sm font-medium transition-colors">
+                Reset All Filters
+            </button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-dark-border bg-dark-card/50 mt-12 py-6 px-4 lg:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-shield-halved text-brand-500"></i>
+                <span>Fast, Safe &amp; Clean Arcade Interface</span>
+            </div>
+            <div>
+                © <span id="year">2026</span> ArcadeHub Unblocked Games. Built with Vanilla JS &amp; Tailwind.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Game Player Modal / Embedded Viewer -->
+    <div id="game-modal" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md hidden flex-col transition-opacity duration-300 opacity-0">
+        <!-- Top Toolbar -->
+        <div class="bg-dark-card/90 border-b border-dark-border px-4 py-3 flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <img id="modal-game-icon" src="" alt="" class="w-8 h-8 rounded-lg object-cover border border-dark-border">
+                <div>
+                    <h3 id="modal-game-title" class="font-bold text-slate-100 text-sm md:text-base leading-tight">Game Title</h3>
+                    <span id="modal-game-category" class="text-xs text-brand-500 font-semibold uppercase tracking-wider">Category</span>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="flex items-center gap-2">
+                <button id="reload-btn" title="Reload Game" class="p-2.5 rounded-lg bg-dark-bg border border-dark-border hover:bg-slate-700 text-slate-300 hover:text-white transition-colors">
+                    <i class="fa-solid fa-rotate-right"></i>
+                </button>
+                <button id="fullscreen-btn" title="Fullscreen Mode" class="p-2.5 rounded-lg bg-dark-bg border border-dark-border hover:bg-slate-700 text-slate-300 hover:text-white transition-colors">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+                <button id="close-modal-btn" title="Close Game" class="p-2.5 rounded-lg bg-red-500/20 border border-red-500/30 text-red-400 hover:bg-red-500 hover:text-white transition-colors">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Frame Container -->
+        <div class="flex-grow relative bg-black flex items-center justify-center overflow-hidden">
+            <!-- Loading Indicator -->
+            <div id="iframe-loader" class="absolute inset-0 flex flex-col items-center justify-center bg-dark-bg gap-3">
+                <div class="w-10 h-10 border-4 border-brand-500/20 border-t-brand-500 rounded-full animate-spin"></div>
+                <p class="text-xs text-slate-400 font-medium">Loading Game Canvas...</p>
+            </div>
+
+            <!-- Game Iframe -->
+            <iframe id="game-iframe" class="w-full h-full border-0 relative z-10" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>
+        </div>
+    </div>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        // Set dynamic copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        /**
+         * JSON DATASET SIMULATION
+         * Represents unblocked playable web games stored as iframe URLs
+         */
+        const MOCK_GAMES_JSON = JSON.stringify([
+            {
+                id: "2048",
+                title: "2048",
+                category: "Puzzle",
+                thumbnail: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=400&q=80",
+                iframeSrc: "https://play2048.co/",
+                tags: ["classic", "numbers", "brain", "popular"]
+            },
+            {
+                id: "hextris",
+                title: "Hextris",
+                category: "Arcade",
+                thumbnail: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=400&q=80",
+                iframeSrc: "https://hextris.io/",
+                tags: ["tetris", "fast", "colors", "action"]
+            },
+            {
+                id: "pacman",
+                title: "Pac-Man Canvas",
+                category: "Retro",
+                thumbnail: "https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?auto=format&fit=crop&w=400&q=80",
+                iframeSrc: "https://pacman.com/en/",
+                tags: ["arcade", "classic", "80s", "ghosts"]
+            },
+            {
+                id: "slope",
+                title: "3D Ball Runner",
+                category: "Action",
+                thumbnail: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=400&q=80",
+                iframeSrc: "https://html5.gamedistribution.com/rvvASm12613d42128e46e8c7ad4ecf8d/",
+                tags: ["3d", "speed", "endless", "ball"]
+            },
+            {
+                id: "chess",
+                title: "Master Chess",
+                category: "Strategy",
+                thumbnail: "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=400&q=80",
+                iframeSrc: "https://html5.gamedistribution.com/62c93845b59740529d380bbfbe5c6f6e/",
+                tags: ["board", "logic", "2player", "mind"]
+            },
+            {
+                id: "drift-boss",
+                title: "Drift Rally",
+                category: "Driving",
+                thumbnail: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=400&q=80",
+                iframeSrc: "https://html5.gamedistribution.com/b39a7776b2e14a1a9e1e2d7e0129bcff/",
+                tags: ["car", "racing", "drift", "speed"]
+            },
+            {
+                id: "snake",
+                title: "Retro Snake",
+                category: "Retro",
+                thumbnail: "https://images.unsplash.com/photo-1628277613967-6abca504d0ac?auto=format&fit=crop&w=400&q=80",
+                iframeSrc: "https://playsnake.org/",
+                tags: ["classic", "arcade", "retro", "easy"]
+            },
+            {
+                id: "flappy-bird",
+                title: "Flappy Plane",
+                category: "Arcade",
+                thumbnail: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=400&q=80",
+                iframeSrc: "https://flappybird.io/",
+                tags: ["tap", "hard", "flying", "bird"]
+            }
+        ]);
+
+        // Application State
+        let gamesData = [];
+        let activeCategory = "All";
+        let searchQuery = "";
+
+        // DOM Elements
+        const gamesGrid = document.getElementById('games-grid');
+        const categoryContainer = document.getElementById('category-container');
+        const searchInput = document.getElementById('search-input');
+        const clearSearchBtn = document.getElementById('clear-search');
+        const gameCountBadge = document.getElementById('game-count');
+        const visibleCountSpan = document.getElementById('visible-count');
+        const sectionTitle = document.getElementById('section-title');
+        const noResultsDiv = document.getElementById('no-results');
+        const resetFiltersBtn = document.getElementById('reset-filters');
+
+        // Modal DOM Elements
+        const gameModal = document.getElementById('game-modal');
+        const gameIframe = document.getElementById('game-iframe');
+        const iframeLoader = document.getElementById('iframe-loader');
+        const modalGameTitle = document.getElementById('modal-game-title');
+        const modalGameCategory = document.getElementById('modal-game-category');
+        const modalGameIcon = document.getElementById('modal-game-icon');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+        const fullscreenBtn = document.getElementById('fullscreen-btn');
+        const reloadBtn = document.getElementById('reload-btn');
+
+        // Initialize App
+        function initApp() {
+            // Load and parse simulated JSON
+            try {
+                gamesData = JSON.parse(MOCK_GAMES_JSON);
+            } catch (err) {
+                console.error("Error loading games JSON:", err);
+                gamesData = [];
+            }
+
+            // Update stats
+            gameCountBadge.textContent = `${gamesData.length} Games`;
+
+            // Extract Categories
+            const categories = ["All", ...new Set(gamesData.map(g => g.category))];
+
+            // Render Category Filter Buttons
+            renderCategoryButtons(categories);
+
+            // Render Initial Games
+            filterAndRenderGames();
+
+            // Event Listeners
+            setupEventListeners();
+        }
+
+        // Render Category Filter Buttons
+        function renderCategoryButtons(categories) {
+            categoryContainer.innerHTML = categories.map(cat => `
+                <button 
+                    data-category="${cat}"
+                    class="category-btn whitespace-nowrap px-4 py-2 rounded-xl text-xs font-semibold border transition-all ${
+                        cat === activeCategory 
+                        ? 'bg-brand-600 border-brand-500 text-white shadow-lg shadow-brand-600/25' 
+                        : 'bg-dark-card border-dark-border text-slate-300 hover:border-slate-600 hover:text-white'
+                    }"
+                >
+                    ${getCategoryIcon(cat)} ${cat}
+                </button>
+            `).join('');
+        }
+
+        // Helper icon for categories
+        function getCategoryIcon(cat) {
+            switch(cat) {
+                case 'All': return '<i class="fa-solid fa-border-all mr-1.5"></i>';
+                case 'Puzzle': return '<i class="fa-solid fa-puzzle-piece mr-1.5"></i>';
+                case 'Arcade': return '<i class="fa-solid fa-gamepad mr-1.5"></i>';
+                case 'Action': return '<i class="fa-solid fa-bolt mr-1.5"></i>';
+                case 'Driving': return '<i class="fa-solid fa-car mr-1.5"></i>';
+                case 'Strategy': return '<i class="fa-solid fa-chess mr-1.5"></i>';
+                case 'Retro': return '<i class="fa-solid fa-ghost mr-1.5"></i>';
+                default: return '<i class="fa-solid fa-cubes mr-1.5"></i>';
+            }
+        }
+
+        // Filter & Render Games
+        function filterAndRenderGames() {
+            const query = searchQuery.toLowerCase().trim();
+
+            const filtered = gamesData.filter(game => {
+                const matchesCategory = activeCategory === 'All' || game.category === activeCategory;
+                const matchesTitle = game.title.toLowerCase().includes(query);
+                const matchesTag = game.tags && game.tags.some(tag => tag.toLowerCase().includes(query));
+
+                return matchesCategory && (matchesTitle || matchesTag);
+            });
+
+            // Update visible stats
+            visibleCountSpan.textContent = filtered.length;
+            sectionTitle.innerHTML = activeCategory === 'All' 
+                ? '<span>All Games</span>' 
+                : `<span>Category: <span class="text-brand-500">${activeCategory}</span></span>`;
+
+            // Toggle No Results
+            if (filtered.length === 0) {
+                gamesGrid.innerHTML = '';
+                noResultsDiv.classList.remove('hidden');
+                noResultsDiv.classList.add('flex');
+            } else {
+                noResultsDiv.classList.add('hidden');
+                noResultsDiv.classList.remove('flex');
+                
+                // Render Cards
+                gamesGrid.innerHTML = filtered.map(game => `
+                    <div 
+                        onclick="launchGame('${game.id}')"
+                        class="game-card group cursor-pointer bg-dark-card border border-dark-border hover:border-brand-500/50 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg"
+                    >
+                        <div class="relative aspect-video w-full overflow-hidden bg-slate-900">
+                            <img 
+                                src="${game.thumbnail}" 
+                                alt="${game.title}"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                                loading="lazy"
+                                onerror="this.src='https://placehold.co/400x225/1e293b/94a3b8?text=Arcade+Game'"
+                            />
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark-card via-transparent to-transparent opacity-60"></div>
+                            
+                            <!-- Play Overlay Button -->
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-slate-950/40 backdrop-blur-[2px] transition-opacity">
+                                <span class="w-12 h-12 rounded-full bg-brand-500 text-white flex items-center justify-center shadow-lg shadow-brand-500/40 transform scale-75 group-hover:scale-100 transition-transform">
+                                    <i class="fa-solid fa-play ml-0.5 text-lg"></i>
+                                </span>
+                            </div>
+
+                            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-slate-900/80 backdrop-blur-md text-brand-500 border border-brand-500/20">
+                                ${game.category}
+                            </span>
+                        </div>
+
+                        <div class="p-3.5 flex flex-col justify-between flex-grow">
+                            <h3 class="font-bold text-slate-100 text-sm group-hover:text-brand-500 transition-colors line-clamp-1 mb-2">
+                                ${game.title}
+                            </h3>
+                            <div class="flex flex-wrap gap-1">
+                                ${game.tags.slice(0, 2).map(tag => `
+                                    <span class="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700/50">#${tag}</span>
+                                `).join('')}
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+        }
+
+        // Setup Event Listeners
+        function setupEventListeners() {
+            // Category Buttons Click
+            categoryContainer.addEventListener('click', (e) => {
+                const btn = e.target.closest('.category-btn');
+                if (!btn) return;
+
+                activeCategory = btn.dataset.category;
+
+                // Update Category Styling
+                document.querySelectorAll('.category-btn').forEach(b => {
+                    b.classList.remove('bg-brand-600', 'border-brand-500', 'text-white', 'shadow-lg', 'shadow-brand-600/25');
+                    b.classList.add('bg-dark-card', 'border-dark-border', 'text-slate-300');
+                });
+                btn.classList.remove('bg-dark-card', 'border-dark-border', 'text-slate-300');
+                btn.classList.add('bg-brand-600', 'border-brand-500', 'text-white', 'shadow-lg', 'shadow-brand-600/25');
+
+                filterAndRenderGames();
+            });
+
+            // Search Input Event
+            searchInput.addEventListener('input', (e) => {
+                searchQuery = e.target.value;
+                clearSearchBtn.classList.toggle('hidden', searchQuery.length === 0);
+                filterAndRenderGames();
+            });
+
+            // Clear Search
+            clearSearchBtn.addEventListener('click', () => {
+                searchInput.value = '';
+                searchQuery = '';
+                clearSearchBtn.classList.add('hidden');
+                filterAndRenderGames();
+            });
+
+            // Reset Filter Button
+            resetFiltersBtn.addEventListener('click', () => {
+                activeCategory = 'All';
+                searchQuery = '';
+                searchInput.value = '';
+                clearSearchBtn.classList.add('hidden');
+                
+                const allCategoriesBtn = categoryContainer.querySelector('[data-category="All"]');
+                if (allCategoriesBtn) allCategoriesBtn.click();
+            });
+
+            // Close Modal Events
+            closeModalBtn.addEventListener('click', closeGameModal);
+            
+            // Fullscreen Event
+            fullscreenBtn.addEventListener('click', toggleFullscreen);
+
+            // Reload Game Frame
+            reloadBtn.addEventListener('click', () => {
+                if (gameIframe.src) {
+                    iframeLoader.classList.remove('hidden');
+                    gameIframe.src = gameIframe.src;
+                }
+            });
+
+            // Hide Loader on Iframe Load
+            gameIframe.addEventListener('load', () => {
+                iframeLoader.classList.add('hidden');
+            });
+
+            // Escape Key Listener for Modal
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && !gameModal.classList.contains('hidden')) {
+                    closeGameModal();
+                }
+            });
+        }
+
+        // Launch Game in Iframe Modal
+        window.launchGame = function(id) {
+            const game = gamesData.find(g => g.id === id);
+            if (!game) return;
+
+            modalGameTitle.textContent = game.title;
+            modalGameCategory.textContent = game.category;
+            modalGameIcon.src = game.thumbnail;
+
+            // Show Loader and Load Source
+            iframeLoader.classList.remove('hidden');
+            gameIframe.src = game.iframeSrc;
+
+            // Display Modal with Fade-In
+            gameModal.classList.remove('hidden');
+            gameModal.classList.add('flex');
+            setTimeout(() => {
+                gameModal.classList.remove('opacity-0');
+                gameModal.classList.add('opacity-100');
+            }, 10);
+
+            // Prevent background scrolling
+            document.body.style.overflow = 'hidden';
+        };
+
+        // Close Game Modal
+        function closeGameModal() {
+            gameModal.classList.remove('opacity-100');
+            gameModal.classList.add('opacity-0');
+            
+            setTimeout(() => {
+                gameModal.classList.add('hidden');
+                gameModal.classList.remove('flex');
+                gameIframe.src = 'about:blank'; // Clear iframe memory
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+
+        // Toggle Fullscreen Mode
+        function toggleFullscreen() {
+            if (!document.fullscreenElement) {
+                gameModal.requestFullscreen().catch(err => {
+                    console.error(`Error attempting to enable fullscreen: ${err.message}`);
+                });
+            } else {
+                document.exitFullscreen();
+            }
+        }
+
+        // Run application
+        window.addEventListener('DOMContentLoaded', initApp);
+    </script>
+
+</body></html>
